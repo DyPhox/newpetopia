@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Petopia</title>
+    <link href="../Content/estilos.css" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+                <h1>Petopia</h1>
+            </div>
+            <nav class="menu">
+                <a href="/inicio">Inicio</a>
+                <a href="info.html">Nosotros</a>
+                <a href="contacto">Contacto</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <div class="background"></div>
+    <div class="capa">
+        <div class="contenido">
+            <h2 class="">Petopia</h2>
+            <div class="texto">
+                <h2>Bienvenido <br><span> a Petopia chamo</span></h2>
+
+                <p>ksljaljflkjsdofalkjsdhfhllhskdfbalhdfbjahfbajkgafdg</p>
+
+            </div>
+
+        </div>
+        <div class="logbox">
+            <div class="box login">
+                <form action="/login" method="POST">
+
+                    <h2>Iniciar Sesion</h2>
+
+                    <div class="inputbox">
+                        <span class="icon"><box-icon color="#e4e4e4" name='envelope' type='solid' class="ema"></box-icon></span>
+                        <input type="text" required name="username">
+                        <label>Correo</label>
+                    </div>
+                    <div class="inputbox">
+                        <span class="icon"><box-icon color="#e4e4e4" type='solid' name='lock-alt'></box-icon></span>
+                        <input type="password" required name="password">
+                        <label>Contraseña</label>
+                    </div>
+                    <div class="recordar">
+                        <label><input type="checkbox" name="remember">Recordar</label>
+                        <a href="">Recuperar contraseña</a>
+                    </div>
+                    <button type="submit" class="btn">Entrar</button>
+
+                    <div class="register">
+                        <p>¿No tienes  cuenta? <a class="regLink">Registrarse</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="box registro">
+                <form action="/registro" method="POST">
+
+                    <h2>Registro</h2>
+
+                    <div class="inputbox">
+                        <span class="icon"><box-icon color="#e4e4e4" type='solid' name='user'></box-icon></span>
+                        <input type="text" required name="username">
+                        <label>Nombre</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <span class="icon"><box-icon color="#e4e4e4" name='envelope' type='solid' class="ema"></box-icon></span>
+                        <input type="email" required name="email">
+                        <label>Correo</label>
+                    </div>
+                    <div class="inputbox">
+                        <span class="icon"><box-icon color="#e4e4e4" type='solid' name='lock-alt'></box-icon></span>
+                        <input type="password" required name="password">
+                        <label>Contraseña</label>
+                    </div>
+                    <div class="inputbox">
+                        <span class="icon"><box-icon color="#e4e4e4" type='solid' name='lock-alt'></box-icon></span>
+                        <input type="password" required name="cpassword">
+                        <label>Confirmar Contraseña</label>
+                    </div>
+                    <div class="recordar">
+                        <label><input type="checkbox">Acepto los terminos & condiciones</label>
+
+                    </div>
+                    <input type="submit" value="guardar" class="btn">
+
+                    <div class="register">
+                        <p>¿Ya tienes una cuenta? <a href="#" class="loginLink">Iniciar sesion</a></p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!--	--------------->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="perfil.blade.php">Perfil</a>
+                <a href="inicio/productos">Productos</a>
+                <a href="adop.html">Adopciones</a>
+                <a href="compras.html">Carrito de Compras</a>
+
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+    <div></div>
+
+
+    <script src="../Scripts/reg.js"></script>

@@ -1,0 +1,343 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: 10vh;
+    background: url('');
+}
+
+.capa {
+    /*position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 550px;
+    background: url(../Content/img/perros.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+    .capa .contenido {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 58%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        padding: 80px;
+        color: #e4e4e4;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .capa .logbox {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: calc(100% - 58%);
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .capa .logo {
+        font-size: 30px;
+    }
+
+.texto h2 {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.texto p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.texto h2 span {
+    font-size: 25px;
+}
+
+.logbox .box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #e4e4e4;
+}
+
+    .logbox .box.login {
+        transform: translateX(0);
+        transition: transform .6s ease;
+        transition-delay: .7s;
+    }
+
+.logbox.active .box.login {
+    transform: translateX(430px);
+    transition-delay: 0s;
+}
+
+.logbox .box.registro {
+    transform: translateX(430px);
+    transition: transform .6s ease;
+    transition-delay: 0s;
+}
+
+.logbox.active .box.registro {
+    transform: translateX(0);
+    transition-delay: .7s;
+}
+
+.box h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.box .inputbox {
+    position: relative;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #e4e4e4;
+    margin: 30px 0;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 120%;
+    top: -5%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #e4e4e4;
+    font-weight: 500;
+    padding-right: 28px;
+    text-align: center;
+}
+
+.inputbox label {
+    position: absolute;
+    left: 0;
+    top: 5%;
+    transform: translateY(50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.inputbox input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -50%;
+}
+
+.inputbox .icon {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+}
+
+.logbox .recordar {
+    font-size: 14.5px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recordar label input {
+    accent-color: #e4e4e4;
+    margin-right: 3px;
+}
+
+.recordar a {
+    color: #e4e4e4;
+    text-decoration: none;
+}
+
+    .recordar a:hover {
+        text-decoration: underline;
+    }
+
+.btn {
+    width: 100%;
+    height: 45%;
+    background: #c4103d;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #e4e4e4;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.logbox .register {
+    font-size: 14.5px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.register p a {
+    color: #e4e4e4;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+    .register p a:hover {
+        text-decoration: underline;
+    }
+
+
+
+/*Estilos para el encabezado*/
+.header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #78a6c9;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+    .container .btn-menu, .logo {
+        float: left;
+        line-height: 100px;
+    }
+
+        .container .btn-menu label {
+            color: #fff;
+            font-weight: 400;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .logo h1 {
+            color: #fff;
+            font-weight: 400;
+            font-size: 22px;
+            margin-left: 50px;
+        }
+
+    .container .menu {
+        float: right;
+        line-height: 100px;
+    }
+
+        .container .menu a {
+            display: inline-block;
+            padding: 15px;
+            line-height: normal;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+            font-size: 15px;
+            font-weight: 400;
+            margin-right: 5px;
+        }
+
+            .container .menu a:hover {
+                border-bottom: 2px solid white;
+                padding-bottom: 5px;
+            }
+
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+#btn-menu {
+    display: none;
+}
+
+.container-menu {
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    /*transition: all 500ms ease;*/
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #0f132e;
+    height: 100vh;
+    position: relative;
+    /*transition: all 500ms ease;*/
+    transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0%);
+}
+
+.cont-menu nav {
+    transform: translateY(15%);
+}
+
+    .cont-menu nav a {
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        color: #c7c7c7;
+        border-left: 5px solid transparent;
+        transition: all 400ms ease;
+    }
+
+        .cont-menu nav a:hover {
+            border-left: 5px solid #536d88;
+            background: #19274e;
+        }
+
+.cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+/*Fin de Menù lateral*/
